@@ -48,7 +48,10 @@ public class CarControl : MonoBehaviour
     {
         // Read the Vector2 input from the new Input System
         Vector2 inputVector = carControls.Car.Drive.ReadValue<Vector2>();
-
+        Move(inputVector);
+    }
+    
+    public void Move(Vector2 inputVector) {
         // Get player input for acceleration and steering
         float vInput = inputVector.y; // Forward/backward input
         float hInput = inputVector.x; // Steering input
