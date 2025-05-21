@@ -4,15 +4,16 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 public class CarAgent : Agent
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private CarControl carControl;
+    public override void CollectObservations(VectorSensor sensor)
     {
-        
+        sensor.AddObservation(carControl.rigidBody.linearVelocity);
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnActionReceived(ActionBuffers actions)
     {
-        
+        float turn = actions.ContinuousActions[0];
+        float pedal = actions.ContinuousActions[1];
+        carControl.Move(new Vector2(turn, pedal));
     }
 }
