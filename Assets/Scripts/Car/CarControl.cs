@@ -11,7 +11,7 @@ public class CarControl : MonoBehaviour
     public float centreOfGravityOffset = -1f;
 
     private WheelControl[] wheels;
-    private Rigidbody rigidBody;
+    public Rigidbody rigidBody;
 
     private CarInputActions carControls; // Reference to the new input system
 
