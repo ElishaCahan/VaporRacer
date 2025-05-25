@@ -9,6 +9,7 @@ public class CarControl : MonoBehaviour
     public float steeringRange = 30f;
     public float steeringRangeAtMaxSpeed = 10f;
     public float centreOfGravityOffset = -1f;
+    public bool isControllable = true;
 
     private WheelControl[] wheels;
     public Rigidbody rigidBody;
@@ -46,9 +47,11 @@ public class CarControl : MonoBehaviour
     // FixedUpdate is called at a fixed time interval
     void FixedUpdate()
     {
-        // Read the Vector2 input from the new Input System
-        Vector2 inputVector = carControls.Car.Drive.ReadValue<Vector2>();
-        Move(inputVector);
+        if (isControllable) {
+            // Read the Vector2 input from the new Input System
+            Vector2 inputVector = carControls.Car.Drive.ReadValue<Vector2>();
+            Move(inputVector);
+        }
     }
     
     public void Move(Vector2 inputVector) {
