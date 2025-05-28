@@ -32,7 +32,7 @@ public class CarControl : MonoBehaviour
 
     public void reset()
     {
-        transform.position = new Vector3(4.5f, 0, 0);
+        transform.position = new Vector3(4.6f, -1, 39);
         rigidBody.linearVelocity = new Vector3(0, 0, 0);
         transform.rotation = Quaternion.Euler(0, 54, 0);
     }
