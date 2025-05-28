@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 6521265328415068527}
   - component: {fileID: 7306786778095364336}
   - component: {fileID: 8422093470363835557}
+  - component: {fileID: 8512040428846240284}
   m_Layer: 0
   m_Name: CarPrefab
   m_TagString: Untagged
@@ -351,6 +352,28 @@ MonoBehaviour:
   centreOfGravityOffset: -1
   isControllable: 1
   rigidBody: {fileID: 0}
+--- !u!64 &8512040428846240284
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301357765739176869}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1686141760831324934, guid: 8005fdf23baacf84395bc94e0855b41c, type: 3}
 --- !u!1 &4774376283154068941
 GameObject:
   m_ObjectHideFlags: 0
