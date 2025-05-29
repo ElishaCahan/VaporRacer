@@ -4,6 +4,8 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 public class CarAgent : Agent
 {
+    int check = -1;
+    int formercheck = -1;
     private float time = 0.00f;
     [SerializeField] private CarControl carControl;
     public override void CollectObservations(VectorSensor sensor)
@@ -28,6 +30,17 @@ public class CarAgent : Agent
         if(time > 10)
         {
             AddReward(carControl.rigidBody.linearVelocity.magnitude);
+        }
+    }
+    public void onTriggerEnter(Collider other)
+    {
+
+        formercheck = check;
+        check = other.GetComponent<CheckpointNum>().num;
+        Debug.Log("Reward Triggered: " + check);
+        if (formercheck >= check)
+        {
+            SetReward(0);
         }
     }
 }
