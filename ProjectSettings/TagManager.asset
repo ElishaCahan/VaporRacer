@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Track
+  - Wall
+  - Floor
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

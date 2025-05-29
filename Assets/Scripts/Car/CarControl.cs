@@ -5,7 +5,7 @@ public class CarControl : MonoBehaviour
     [Header("Car Properties")]
     public float motorTorque = 2000f;
     public float brakeTorque = 2000f;
-    public float maxSpeed = 20f;
+    public float maxSpeed = 100f;
     public float steeringRange = 30f;
     public float steeringRangeAtMaxSpeed = 10f;
     public float centreOfGravityOffset = -1f;
@@ -32,7 +32,7 @@ public class CarControl : MonoBehaviour
 
     public void reset()
     {
-        transform.position = new Vector3(4.6f, -1, 39);
+        transform.position = new Vector3(-12, 0, 25);
         rigidBody.linearVelocity = new Vector3(0, 0, 0);
         transform.rotation = Quaternion.Euler(0, 54, 0);
     }
