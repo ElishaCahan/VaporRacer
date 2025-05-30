@@ -29,17 +29,16 @@ public class CarAgent : Agent
         time += Time.deltaTime;
         if(time > 10)
         {
-            AddReward(carControl.rigidBody.linearVelocity.magnitude);
+            AddReward(carControl.rigidBody.linearVelocity.magnitude*Time.deltaTime);
         }
     }
-    public void onTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-
         formercheck = check;
         check = other.GetComponent<CheckpointNum>().num;
-        Debug.Log("Reward Triggered: " + check);
         if (formercheck >= check)
         {
+            Debug.Log("Penalty Triggered: " + check);
             SetReward(0);
         }
     }

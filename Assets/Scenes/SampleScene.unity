@@ -169,7 +169,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &75118
 Transform:
@@ -350,7 +350,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &269374418
 Transform:
@@ -444,7 +444,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &674098538
 Transform:
@@ -717,7 +717,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &856247151
 Transform:
@@ -948,7 +948,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1198864771
 Transform:
@@ -1026,7 +1026,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1428440036
 Transform:
@@ -1120,7 +1120,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1524028646
 Transform:
@@ -1187,7 +1187,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1631044450
 Transform:
@@ -1254,7 +1254,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1665391604
 Transform:
@@ -1321,7 +1321,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1721455005
 Transform:
@@ -1375,7 +1375,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1833402515
 Transform:
@@ -1527,7 +1527,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1915735488
 Transform:
@@ -1594,7 +1594,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 1, z: 100}
+  m_Size: {x: 2, y: 20, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2010277087
 Transform:
