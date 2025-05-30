@@ -16,6 +16,8 @@ public class CarAgent : Agent
     public override void OnEpisodeBegin()
     {
         carControl.reset();
+        check = -1;
+        formercheck = -1;
     }
 
     public override void OnActionReceived(ActionBuffers actions)
