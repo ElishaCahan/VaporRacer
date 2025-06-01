@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 75118}
   - component: {fileID: 75117}
   - component: {fileID: 75116}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (4)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 269374418}
   - component: {fileID: 269374417}
   - component: {fileID: 269374416}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (3)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 674098538}
   - component: {fileID: 674098537}
   - component: {fileID: 674098536}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (1)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 856247151}
   - component: {fileID: 856247150}
   - component: {fileID: 856247149}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (6)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -909,7 +909,7 @@ GameObject:
   - component: {fileID: 1198864771}
   - component: {fileID: 1198864770}
   - component: {fileID: 1198864769}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (5)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1056,7 +1056,7 @@ GameObject:
   - component: {fileID: 1428440036}
   - component: {fileID: 1428440035}
   - component: {fileID: 1428440034}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (11)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1150,7 +1150,7 @@ GameObject:
   - component: {fileID: 1524028646}
   - component: {fileID: 1524028645}
   - component: {fileID: 1524028644}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (9)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 1631044450}
   - component: {fileID: 1631044449}
   - component: {fileID: 1631044448}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (10)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1284,7 +1284,7 @@ GameObject:
   - component: {fileID: 1665391604}
   - component: {fileID: 1665391603}
   - component: {fileID: 1665391602}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (12)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1351,7 +1351,7 @@ GameObject:
   - component: {fileID: 1721455005}
   - component: {fileID: 1721455004}
   - component: {fileID: 1721455003}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (7)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1418,7 +1418,7 @@ GameObject:
   - component: {fileID: 1833402515}
   - component: {fileID: 1833402514}
   - component: {fileID: 1833402516}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1557,7 +1557,7 @@ GameObject:
   - component: {fileID: 1915735488}
   - component: {fileID: 1915735487}
   - component: {fileID: 1915735486}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (2)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1624,7 +1624,7 @@ GameObject:
   - component: {fileID: 2010277087}
   - component: {fileID: 2010277086}
   - component: {fileID: 2010277085}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (8)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1691,7 +1691,7 @@ GameObject:
   - component: {fileID: 2106109504}
   - component: {fileID: 2106109503}
   - component: {fileID: 2106109502}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Checkpoint (13)
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1876,10 +1876,10 @@ MonoBehaviour:
   m_DetectableTags:
   - Wall
   - Floor
-  m_RaysPerDirection: 5
-  m_MaxRayDegrees: 60
-  m_SphereCastRadius: 0.5
-  m_RayLength: 40
+  m_RaysPerDirection: 10
+  m_MaxRayDegrees: 180
+  m_SphereCastRadius: 1
+  m_RayLength: 100
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 4294967291
@@ -1888,8 +1888,8 @@ MonoBehaviour:
   m_UseBatchedRaycasts: 0
   rayHitColor: {r: 1, g: 0, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
-  m_StartVerticalOffset: 0
-  m_EndVerticalOffset: 0
+  m_StartVerticalOffset: 3.5
+  m_EndVerticalOffset: 2
 --- !u!114 &4622525399536147034
 MonoBehaviour:
   m_ObjectHideFlags: 0

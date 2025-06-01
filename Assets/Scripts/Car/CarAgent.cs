@@ -41,7 +41,7 @@ public class CarAgent : Agent
             speedRewardTimer = 0;
         }
         if(splitTimer > 20) {
-            SetReward(-5*(splitTimer-10));
+            SetReward(-5*(splitTimer-10)*Time.deltaTime);
         }
     }
     public void OnTriggerEnter(Collider other)
@@ -51,7 +51,7 @@ public class CarAgent : Agent
         if (formercheck >= check)
         {
             Debug.Log("Penalty Triggered: " + check);
-            SetReward(0);
+            SetReward(-100);
         }
         if(check > formercheck)
             splitTimer = 0;
