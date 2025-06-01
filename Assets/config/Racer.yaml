@@ -2,6 +2,8 @@ behaviors:
     Car:
         trainer_type: sac
         hyperparameters:
+            buffer_init_steps: 3000
+            init_entcoef: 1.0
             batch_size: 256
             buffer_size: 500000
         network_settings:
