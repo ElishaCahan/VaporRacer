@@ -46,6 +46,7 @@ public class CarAgent : Agent
     }
     public void OnTriggerEnter(Collider other)
     {
+        if(!other.CompareTag("Checkpoint")) return;
         formercheck = check;
         check = other.GetComponent<CheckpointNum>().num;
         if (formercheck >= check)
@@ -53,7 +54,16 @@ public class CarAgent : Agent
             Debug.Log("Penalty Triggered: " + check);
             SetReward(-100);
         }
-        if(check > formercheck)
+        if(check > formercheck) {
             splitTimer = 0;
+            AddReward(60);
+        }
+    }
+
+    public void OllisionEnter(Collision collision)
+    {
+        if(collision.body.CompareTag("Wall")) {
+            AddReward(-20);
+        }
     }
 }
