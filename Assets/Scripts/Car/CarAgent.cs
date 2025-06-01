@@ -8,7 +8,7 @@ public class CarAgent : Agent
     int formercheck = -1;
     float speedRewardTimer = 0.00f;
     float splitTimer = 0.00f;
-    float avgSpeedDuringSplit = 0;
+    float avgSpeedDuringTime = 0;
     [SerializeField] private CarControl carControl;
     public override void CollectObservations(VectorSensor sensor)
     {
@@ -31,16 +31,17 @@ public class CarAgent : Agent
 
     void Update()
     {
-        avgSpeedDuringSplit = (avgSpeedDuringSplit*speedRewardTimer + carControl.rigidBody.linearVelocity.magnitude)/(speedRewardTimer+Time.deltaTime);
+        avgSpeedDuringTime = (avgSpeedDuringTime*speedRewardTimer + carControl.rigidBody.linearVelocity.magnitude)/(speedRewardTimer+Time.deltaTime);
         speedRewardTimer += Time.deltaTime;
         splitTimer += Time.deltaTime;
         if(speedRewardTimer > 3)
         {
-            AddReward(avgSpeedDuringSplit);
-            avgSpeedDuringSplit = 0;
+            AddReward(avgSpeedDuringTime-10);
+            avgSpeedDuringTime = 0;
         }
-        if(splitTimer > 10)
-            SetReward(0);
+        if(splitTimer > 10) {
+            SetReward(-5*(splitTimer-10));
+        }
     }
     public void OnTriggerEnter(Collider other)
     {
