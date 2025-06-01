@@ -36,10 +36,11 @@ public class CarAgent : Agent
         splitTimer += Time.deltaTime;
         if(speedRewardTimer > 3)
         {
-            AddReward(avgSpeedDuringTime-10);
+            AddReward(avgSpeedDuringTime-1);
             avgSpeedDuringTime = 0;
+            speedRewardTimer = 0;
         }
-        if(splitTimer > 10) {
+        if(splitTimer > 20) {
             SetReward(-5*(splitTimer-10));
         }
     }
