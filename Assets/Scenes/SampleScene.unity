@@ -1742,7 +1742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8422093470363835557, guid: 9559108be19deddfd9fe725f8f2ec290, type: 3}
       propertyPath: isControllable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8422093470363835557, guid: 9559108be19deddfd9fe725f8f2ec290, type: 3}
       propertyPath: steeringRangeAtMaxSpeed
@@ -1838,7 +1838,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
+  MaxStep: 100000
   carControl: {fileID: 1400031579}
 --- !u!114 &4622525399536147035
 MonoBehaviour:

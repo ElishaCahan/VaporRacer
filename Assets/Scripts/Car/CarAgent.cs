@@ -6,7 +6,9 @@ public class CarAgent : Agent
 {
     int check = -1;
     int formercheck = -1;
-    private float time = 0.00f;
+    float speedRewardTimer = 0.00f;
+    float splitTimer = 0.00f;
+    float avgSpeedDuringSplit = 0;
     [SerializeField] private CarControl carControl;
     public override void CollectObservations(VectorSensor sensor)
     {
@@ -26,13 +28,19 @@ public class CarAgent : Agent
         float pedal = actions.ContinuousActions[1];
         carControl.Move(new Vector2(turn, pedal));
     }
+
     void Update()
     {
-        time += Time.deltaTime;
-        if(time > 10)
+        avgSpeedDuringSplit = (avgSpeedDuringSplit*speedRewardTimer + carControl.rigidBody.linearVelocity.magnitude)/(speedRewardTimer+Time.deltaTime);
+        speedRewardTimer += Time.deltaTime;
+        splitTimer += Time.deltaTime;
+        if(speedRewardTimer > 3)
         {
-            AddReward(carControl.rigidBody.linearVelocity.magnitude*Time.deltaTime);
+            AddReward(avgSpeedDuringSplit);
+            avgSpeedDuringSplit = 0;
         }
+        if(splitTimer > 10)
+            SetReward(0);
     }
     public void OnTriggerEnter(Collider other)
     {
@@ -43,5 +51,7 @@ public class CarAgent : Agent
             Debug.Log("Penalty Triggered: " + check);
             SetReward(0);
         }
+        if(check > formercheck)
+            splitTimer = 0;
     }
 }
