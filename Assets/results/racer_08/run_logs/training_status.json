@@ -1,0 +1,29 @@
+{
+    "Car": {
+        "checkpoints": [
+            {
+                "steps": 55296,
+                "file_path": "results/racer_08/Car/Car-55296.onnx",
+                "reward": null,
+                "creation_time": 1748835293.4385877,
+                "auxillary_file_paths": [
+                    "results/racer_08/Car/Car-55296.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 55296,
+            "file_path": "results/racer_08/Car.onnx",
+            "reward": null,
+            "creation_time": 1748835293.4385877,
+            "auxillary_file_paths": [
+                "results/racer_08/Car/Car-55296.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cu124"
+    }
+}

@@ -36,7 +36,7 @@ public class CarAgent : Agent
         splitTimer += Time.deltaTime;
         if(speedRewardTimer > 3)
         {
-            AddReward((avgSpeedDuringTime-30)*2);
+            AddReward((avgSpeedDuringTime-25)*2);
             avgSpeedDuringTime = 0;
             speedRewardTimer = 0;
         }
@@ -63,8 +63,8 @@ public class CarAgent : Agent
 
     public void OnCollisionEnter(Collision collision)
     {
-        // if(collision.body.CompareTag("Wall")) {
-        //     AddReward(-20);
-        // }
+        if(collision.collider.CompareTag("Wall")) {
+            AddReward(-40);
+        }
     }
 }
