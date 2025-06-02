@@ -2,10 +2,10 @@ behaviors:
     Car:
         trainer_type: sac
         hyperparameters:
-            buffer_init_steps: 3000
+            buffer_init_steps: 1000
             init_entcoef: 2.0
-            batch_size: 256
-            buffer_size: 500000
+            batch_size: 128
+            buffer_size: 50000
         network_settings:
             normalize: true
             hidden_units: 512
@@ -16,7 +16,7 @@ behaviors:
                 gamma: 0.9999
                 strength: 1.0
         keep_checkpoints: 5
-        max_steps: 85000
+        max_steps: 1000000
         time_horizon: 128
         summary_freq: 5000
         threaded: true
