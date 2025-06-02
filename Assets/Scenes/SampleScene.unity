@@ -396,7 +396,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 18564764}
 --- !u!114 &18564768
 MonoBehaviour:
@@ -420,7 +420,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -639,7 +639,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 19791444}
 --- !u!114 &19791448
 MonoBehaviour:
@@ -663,7 +663,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -882,7 +882,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 26636074}
 --- !u!114 &26636078
 MonoBehaviour:
@@ -906,7 +906,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 53868540}
 --- !u!114 &53868544
 MonoBehaviour:
@@ -1149,7 +1149,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -1368,7 +1368,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 65093895}
 --- !u!114 &65093899
 MonoBehaviour:
@@ -1392,7 +1392,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -1611,7 +1611,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 86865082}
 --- !u!114 &86865086
 MonoBehaviour:
@@ -1635,7 +1635,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -1963,7 +1963,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 209898206}
 --- !u!114 &209898210
 MonoBehaviour:
@@ -1987,7 +1987,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -2273,7 +2273,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 372081477}
 --- !u!114 &372081481
 MonoBehaviour:
@@ -2297,7 +2297,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -2516,7 +2516,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 438691129}
 --- !u!114 &438691133
 MonoBehaviour:
@@ -2540,7 +2540,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -2759,7 +2759,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 441284189}
 --- !u!114 &441284193
 MonoBehaviour:
@@ -2783,7 +2783,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -3029,7 +3029,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 621670016}
 --- !u!114 &621670020
 MonoBehaviour:
@@ -3053,7 +3053,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -3436,7 +3436,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 745372577}
 --- !u!114 &745372581
 MonoBehaviour:
@@ -3460,7 +3460,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -3788,7 +3788,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 817614955}
 --- !u!114 &817614959
 MonoBehaviour:
@@ -3812,7 +3812,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -3950,6 +3950,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 71910282f1bc0b740bc83468a226aa58, type: 3}
       propertyPath: m_Name
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 71910282f1bc0b740bc83468a226aa58, type: 3}
+      propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4262,7 +4266,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 992180665}
 --- !u!114 &992180669
 MonoBehaviour:
@@ -4286,7 +4290,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -4505,7 +4509,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1003526386}
 --- !u!114 &1003526390
 MonoBehaviour:
@@ -4529,7 +4533,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -4748,7 +4752,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1046416658}
 --- !u!114 &1046416662
 MonoBehaviour:
@@ -4772,7 +4776,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -4991,7 +4995,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1159037854}
 --- !u!114 &1159037858
 MonoBehaviour:
@@ -5015,7 +5019,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -5234,7 +5238,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1181580365}
 --- !u!114 &1181580369
 MonoBehaviour:
@@ -5258,7 +5262,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -5544,7 +5548,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1261385435}
 --- !u!114 &1261385439
 MonoBehaviour:
@@ -5568,7 +5572,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -5787,7 +5791,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1261829928}
 --- !u!114 &1261829932
 MonoBehaviour:
@@ -5811,7 +5815,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -6030,7 +6034,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1345923869}
 --- !u!114 &1345923873
 MonoBehaviour:
@@ -6054,7 +6058,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -6126,6 +6130,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ebe67887cd8a640b2946fb6a44a39e22, type: 3}
       propertyPath: m_Name
       value: Striped Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ebe67887cd8a640b2946fb6a44a39e22, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ebe67887cd8a640b2946fb6a44a39e22, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6353,7 +6365,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1404357245}
 --- !u!114 &1404357249
 MonoBehaviour:
@@ -6377,7 +6389,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -6663,7 +6675,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1440825016}
 --- !u!114 &1440825020
 MonoBehaviour:
@@ -6687,7 +6699,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -6696,6 +6708,73 @@ MonoBehaviour:
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
+--- !u!1 &1455328567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455328570}
+  - component: {fileID: 1455328569}
+  - component: {fileID: 1455328568}
+  m_Layer: 2
+  m_Name: Checkpoint (-1)
+  m_TagString: Checkpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1455328568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455328567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5f0eb009f58234bb56d2763efda9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: -1
+--- !u!65 &1455328569
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455328567}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 20, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1455328570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455328567}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.3013457, z: -0, w: 0.953515}
+  m_LocalPosition: {x: 39, y: 0, z: 61.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -35.077, z: 0}
 --- !u!1 &1491554811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 71910282f1bc0b740bc83468a226aa58, type: 3}
@@ -6933,7 +7012,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1499184259}
 --- !u!114 &1499184263
 MonoBehaviour:
@@ -6957,7 +7036,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -7377,7 +7456,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1682671691}
 --- !u!114 &1682671695
 MonoBehaviour:
@@ -7401,7 +7480,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -7620,7 +7699,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1706982645}
 --- !u!114 &1706982649
 MonoBehaviour:
@@ -7644,7 +7723,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -7930,7 +8009,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1811667256}
 --- !u!114 &1811667260
 MonoBehaviour:
@@ -7954,7 +8033,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -8092,6 +8171,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dbcd4a2191870834e8a5b8a1ad8bb5dc, type: 3}
       propertyPath: m_Name
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dbcd4a2191870834e8a5b8a1ad8bb5dc, type: 3}
+      propertyPath: m_TagString
       value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8446,7 +8529,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 2069906097}
 --- !u!114 &2069906101
 MonoBehaviour:
@@ -8470,7 +8553,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -8756,7 +8839,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 2111693866}
 --- !u!114 &2111693870
 MonoBehaviour:
@@ -8780,7 +8863,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -8999,7 +9082,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 2115403480}
 --- !u!114 &2115403484
 MonoBehaviour:
@@ -9023,7 +9106,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -9242,7 +9325,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 2131819813}
 --- !u!114 &2131819817
 MonoBehaviour:
@@ -9266,7 +9349,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -9474,7 +9557,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100000
+  MaxStep: 85000
   carControl: {fileID: 1400031579}
 --- !u!114 &4622525399536147035
 MonoBehaviour:
@@ -9498,7 +9581,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 0d3aff9f4bef34688819f4b01b73695b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: c19bd6e42b11ec02d844f34e1d85f66e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Car
@@ -9549,6 +9632,7 @@ SceneRoots:
   - {fileID: 1857545184}
   - {fileID: 919245256}
   - {fileID: 141597531}
+  - {fileID: 1455328570}
   - {fileID: 1833402515}
   - {fileID: 674098538}
   - {fileID: 1915735488}

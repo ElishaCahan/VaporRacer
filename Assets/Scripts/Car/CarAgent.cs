@@ -4,8 +4,8 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 public class CarAgent : Agent
 {
-    int check = -1;
-    int formercheck = -1;
+    int check = -2;
+    int formercheck = -2;
     float speedRewardTimer = 0.00f;
     float splitTimer = 0.00f;
     float avgSpeedDuringTime = 0;
@@ -18,8 +18,8 @@ public class CarAgent : Agent
     public override void OnEpisodeBegin()
     {
         carControl.reset();
-        check = -1;
-        formercheck = -1;
+        check = -2;
+        formercheck = -2;
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -36,7 +36,7 @@ public class CarAgent : Agent
         splitTimer += Time.deltaTime;
         if(speedRewardTimer > 3)
         {
-            AddReward(avgSpeedDuringTime-1);
+            AddReward((avgSpeedDuringTime-30)*2);
             avgSpeedDuringTime = 0;
             speedRewardTimer = 0;
         }
@@ -57,13 +57,14 @@ public class CarAgent : Agent
         if(check > formercheck) {
             splitTimer = 0;
             AddReward(60);
+            if(formercheck == 12 && check == 13) EndEpisode();
         }
     }
 
-    public void OllisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
-        if(collision.body.CompareTag("Wall")) {
-            AddReward(-20);
-        }
+        // if(collision.body.CompareTag("Wall")) {
+        //     AddReward(-20);
+        // }
     }
 }

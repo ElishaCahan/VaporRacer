@@ -3,7 +3,7 @@ behaviors:
         trainer_type: sac
         hyperparameters:
             buffer_init_steps: 3000
-            init_entcoef: 1.0
+            init_entcoef: 2.0
             batch_size: 256
             buffer_size: 500000
         network_settings:
@@ -16,7 +16,7 @@ behaviors:
                 gamma: 0.9999
                 strength: 1.0
         keep_checkpoints: 5
-        max_steps: 1000000
+        max_steps: 85000
         time_horizon: 128
         summary_freq: 5000
         threaded: true

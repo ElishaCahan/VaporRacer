@@ -22,12 +22,14 @@ public class CarControl : MonoBehaviour
     }
     void OnEnable()
     {
-        carControls.Enable();
+        if(isControllable)
+            carControls.Enable();
     }
 
     void OnDisable()
     {
-        carControls.Disable();
+        if(isControllable)
+            carControls.Disable();
     }
 
     public void reset()
