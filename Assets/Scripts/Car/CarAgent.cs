@@ -4,8 +4,8 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 public class CarAgent : Agent
 {
-    int check = -2;
-    int formercheck = -2;
+    int check = -1;
+    int formerCheck = -1;
     float speedRewardTimer = 0.00f;
     float splitTimer = 0.00f;
     float avgSpeedDuringTime = 0;
@@ -18,8 +18,8 @@ public class CarAgent : Agent
     public override void OnEpisodeBegin()
     {
         carControl.reset();
-        check = -2;
-        formercheck = -2;
+        check = -1;
+        formerCheck = -1;
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -36,7 +36,7 @@ public class CarAgent : Agent
         splitTimer += Time.deltaTime;
         if(speedRewardTimer > 3)
         {
-            AddReward((avgSpeedDuringTime-25)*2);
+            AddReward((avgSpeedDuringTime-25)*2.5f);
             avgSpeedDuringTime = 0;
             speedRewardTimer = 0;
         }
@@ -47,24 +47,29 @@ public class CarAgent : Agent
     public void OnTriggerEnter(Collider other)
     {
         if(!other.CompareTag("Checkpoint")) return;
-        formercheck = check;
+        formerCheck = check;
         check = other.GetComponent<CheckpointNum>().num;
-        if (formercheck >= check)
+
+        if(formerCheck == -1 && check > 2) {
+            Debug.Log("Penalty Triggered: " + check);
+            SetReward(-100);
+        }
+        if (formerCheck != -1 && formerCheck >= check)
         {
             Debug.Log("Penalty Triggered: " + check);
             SetReward(-100);
         }
-        if(check > formercheck) {
+        if(check > formerCheck) {
             splitTimer = 0;
-            AddReward(60);
-            if(formercheck == 12 && check == 13) EndEpisode();
+            AddReward(300);
+            if(formerCheck == 13 && check == 14) {EndEpisode();}
         }
     }
 
     public void OnCollisionEnter(Collision collision)
     {
         if(collision.collider.CompareTag("Wall")) {
-            AddReward(-40);
+            AddReward(-80);
         }
     }
 }
