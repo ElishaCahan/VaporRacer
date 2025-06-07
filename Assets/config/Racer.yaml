@@ -3,9 +3,9 @@ behaviors:
         trainer_type: sac
         hyperparameters:
             buffer_init_steps: 500
-            init_entcoef: 2.0
+            init_entcoef: 3.0
             batch_size: 128
-            buffer_size: 8000
+            buffer_size: 20000
         network_settings:
             normalize: true
             hidden_units: 512

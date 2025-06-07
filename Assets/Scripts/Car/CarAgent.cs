@@ -52,16 +52,16 @@ public class CarAgent : Agent
 
         if(formerCheck == -1 && check > 2) {
             Debug.Log("Penalty Triggered: " + check);
-            SetReward(-100);
+            SetReward(-800);
         }
-        if (formerCheck != -1 && formerCheck >= check)
+        if (formerCheck != -1 && formerCheck >= check && !(formerCheck == 14 && check == 0))
         {
             Debug.Log("Penalty Triggered: " + check);
-            SetReward(-100);
+            AddReward(-800);
         }
-        if(check > formerCheck) {
+        if((check > formerCheck) || (formerCheck == 14 && check == 0)) {
             splitTimer = 0;
-            AddReward(300);
+            AddReward(500);
             if(formerCheck == 13 && check == 14) {EndEpisode();}
         }
     }
