@@ -34,9 +34,11 @@ public class CarAgent : Agent
         avgSpeedDuringTime = (avgSpeedDuringTime*speedRewardTimer + carControl.rigidBody.linearVelocity.magnitude)/(speedRewardTimer+Time.deltaTime);
         speedRewardTimer += Time.deltaTime;
         splitTimer += Time.deltaTime;
-        if(speedRewardTimer > 3)
+
+        if(speedRewardTimer > 2)
         {
-            AddReward((avgSpeedDuringTime-25)*2.5f);
+            AddReward((avgSpeedDuringTime-10)*2.5f);
+            Debug.Log("avg speed" + avgSpeedDuringTime);
             avgSpeedDuringTime = 0;
             speedRewardTimer = 0;
         }
@@ -50,26 +52,26 @@ public class CarAgent : Agent
         formerCheck = check;
         check = other.GetComponent<CheckpointNum>().num;
 
-        if(formerCheck == -1 && check > 2) {
-            Debug.Log("Penalty Triggered: " + check);
-            SetReward(-800);
-        }
-        if (formerCheck != -1 && formerCheck >= check && !(formerCheck == 14 && check == 0))
-        {
-            Debug.Log("Penalty Triggered: " + check);
-            AddReward(-800);
-        }
-        if((check > formerCheck) || (formerCheck == 14 && check == 0)) {
+        if(formerCheck == -1 && check > 2) { // Backwords to checkpoint 14
+            SetReward(-1600);
+        } else if(formerCheck == 14 && check == 0) { // Wrap around
+            AddReward(10.0f/(splitTimer/10f + 0.05f));
             splitTimer = 0;
-            AddReward(500);
+            AddReward(900);
+            if(formerCheck == 13 && check == 14) {EndEpisode();}
+        } else if (formerCheck >= check) { // Going backwords after going the right way once
+            AddReward(-800);
+        } else if(check > formerCheck) { // Going the right way
+            AddReward(10.0f/(splitTimer/10f + 0.05f));
+            splitTimer = 0;
+            AddReward(900);
             if(formerCheck == 13 && check == 14) {EndEpisode();}
         }
     }
 
-    public void OnCollisionEnter(Collision collision)
-    {
+    public void OnCollisionStay(Collision collision) {
         if(collision.collider.CompareTag("Wall")) {
-            AddReward(-80);
+            AddReward(-100*Time.deltaTime);
         }
     }
 }
