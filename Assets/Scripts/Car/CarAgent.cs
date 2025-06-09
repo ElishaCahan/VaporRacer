@@ -37,7 +37,7 @@ public class CarAgent : Agent
 
         if(speedRewardTimer > 2)
         {
-            AddReward((avgSpeedDuringTime-10)*2.5f);
+            AddReward((avgSpeedDuringTime-8)*3.5f);
             Debug.Log("avg speed" + avgSpeedDuringTime);
             avgSpeedDuringTime = 0;
             speedRewardTimer = 0;
@@ -52,9 +52,9 @@ public class CarAgent : Agent
         formerCheck = check;
         check = other.GetComponent<CheckpointNum>().num;
 
-        if(formerCheck == -1 && check > 2) { // Backwords to checkpoint 14
+        if(formerCheck == -1 && check == 27) { // Backwords to checkpoint 27
             SetReward(-1600);
-        } else if(formerCheck == 14 && check == 0) { // Wrap around
+        } else if(formerCheck == 27 && check == 0) { // Wrap around
             AddReward(10.0f/(splitTimer/10f + 0.05f));
             splitTimer = 0;
             AddReward(900);
@@ -71,7 +71,7 @@ public class CarAgent : Agent
 
     public void OnCollisionStay(Collision collision) {
         if(collision.collider.CompareTag("Wall")) {
-            AddReward(-100*Time.deltaTime);
+            AddReward(-200*Time.deltaTime);
         }
     }
 }
