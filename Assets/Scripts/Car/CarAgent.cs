@@ -4,22 +4,36 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 public class CarAgent : Agent
 {
-    int check = -1;
-    int formerCheck = -1;
-    float speedRewardTimer = 0.00f;
     float splitTimer = 0.00f;
-    float avgSpeedDuringTime = 0;
     [SerializeField] private CarControl carControl;
+    public GameObject checkpointHolder;
+    CheckpointNum[] checkpoints;
+    int checkpointNum;
+
+    public void Start()
+    {
+        checkpoints = checkpointHolder.GetComponentsInChildren<CheckpointNum>();
+        for (int i = 0; i < checkpoints.Length; i++)
+        {
+            checkpoints[i].num = i;
+        }
+        checkpointNum = -1;
+    }
+
     public override void CollectObservations(VectorSensor sensor)
     {
         sensor.AddObservation(carControl.rigidBody.linearVelocity);
+        Vector3 dirToCheckpoint = checkpoints[(checkpointNum + 1)%checkpoints.Length].transform.position - transform.position;
+        Vector2 dirToCheck2D = new Vector2(dirToCheckpoint.x, dirToCheckpoint.z);
+        sensor.AddObservation(dirToCheck2D);
+        sensor.AddObservation(Vector3.Dot(dirToCheckpoint, carControl.rigidBody.linearVelocity));
     }
 
     public override void OnEpisodeBegin()
     {
         carControl.reset();
-        check = -1;
-        formerCheck = -1;
+        checkpointNum = -1;
+        splitTimer = 0;
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -29,49 +43,46 @@ public class CarAgent : Agent
         carControl.Move(new Vector2(turn, pedal));
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        avgSpeedDuringTime = (avgSpeedDuringTime*speedRewardTimer + carControl.rigidBody.linearVelocity.magnitude)/(speedRewardTimer+Time.deltaTime);
-        speedRewardTimer += Time.deltaTime;
-        splitTimer += Time.deltaTime;
+        // Hard code the normal 50fps physics time for the split timer
+        // splitTimer += 0.02f;
 
-        if(speedRewardTimer > 2)
-        {
-            AddReward((avgSpeedDuringTime-8)*3.5f);
-            Debug.Log("avg speed" + avgSpeedDuringTime);
-            avgSpeedDuringTime = 0;
-            speedRewardTimer = 0;
-        }
-        if(splitTimer > 20) {
-            SetReward(-5*(splitTimer-10)*Time.deltaTime);
-        }
+        // Reward based on how fast, subtracting 8 so that stationary vehicles are penalized
+        AddReward((carControl.rigidBody.linearVelocity.magnitude-16)*0.02f);
+
+        // Reward based on the distance to next checkpoint
+        AddReward(0.02f*(0.4f / ((checkpoints[(checkpointNum + 1)%checkpoints.Length].transform.position - transform.position).magnitude+1f) - 70f));
+
+        // // Negative reward after too long on a split
+        // if (splitTimer > 10)
+        // {
+        //     SetReward(-(splitTimer - 10) * 0.02f);
+        // }
     }
-    public void OnTriggerEnter(Collider other)
-    {
-        if(!other.CompareTag("Checkpoint")) return;
-        formerCheck = check;
-        check = other.GetComponent<CheckpointNum>().num;
-
-        if(formerCheck == -1 && check == 27) { // Backwords to checkpoint 27
-            SetReward(-1600);
-        } else if(formerCheck == 27 && check == 0) { // Wrap around
-            AddReward(10.0f/(splitTimer/10f + 0.05f));
-            splitTimer = 0;
-            AddReward(900);
-            if(formerCheck == 13 && check == 14) {EndEpisode();}
-        } else if (formerCheck >= check) { // Going backwords after going the right way once
-            AddReward(-800);
-        } else if(check > formerCheck) { // Going the right way
-            AddReward(10.0f/(splitTimer/10f + 0.05f));
-            splitTimer = 0;
-            AddReward(900);
-            if(formerCheck == 13 && check == 14) {EndEpisode();}
+    public void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("Checkpoint")) {
+            int num = other.GetComponent<CheckpointNum>().num;
+            // Either we go up in checkpoint or we are wrapping around back to 0
+            if (num == checkpointNum + 1 || (num == 0 && checkpointNum == checkpoints.Length - 1))
+            {
+                AddReward(100);
+                splitTimer = 0f;
+            }
+            else
+            {
+                AddReward(-150);
+                splitTimer = 0f;
+                if(num == checkpoints.Length-1) EndEpisode();
+            }
+            checkpointNum = num;
         }
     }
 
     public void OnCollisionStay(Collision collision) {
         if(collision.collider.CompareTag("Wall")) {
-            AddReward(-200*Time.deltaTime);
+            // Don't crash
+            AddReward(-0.08f);
         }
     }
 }
