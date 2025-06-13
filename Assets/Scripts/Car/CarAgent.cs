@@ -5,6 +5,7 @@ using Unity.MLAgents.Sensors;
 public class CarAgent : Agent
 {
     float splitTimer = 0.00f;
+    float crashingTimer = 0f;
     [SerializeField] private CarControl carControl;
     public GameObject checkpointHolder;
     CheckpointNum[] checkpoints;
@@ -52,7 +53,19 @@ public class CarAgent : Agent
         AddReward((carControl.rigidBody.linearVelocity.magnitude-16)*0.02f);
 
         // Reward based on the distance to next checkpoint
-        AddReward(0.02f*(0.4f / ((checkpoints[(checkpointNum + 1)%checkpoints.Length].transform.position - transform.position).magnitude+1f) - 70f));
+        float dist = (
+            checkpoints[(checkpointNum + 1)%checkpoints.Length].transform.position 
+            - transform.position
+        ).magnitude;
+        int currentCheckpoint = checkpointNum; 
+        if(checkpointNum == -1) currentCheckpoint = checkpoints.Length-1;
+        float distBetweenWaypoints = (
+            checkpoints[(checkpointNum + 1)%checkpoints.Length].transform.position 
+            - checkpoints[currentCheckpoint].transform.position
+        ).magnitude;
+
+        if(dist > distBetweenWaypoints*0.9f) AddReward(-0.6f);
+        else AddReward((distBetweenWaypoints-dist)*0.02f);
 
         // // Negative reward after too long on a split
         // if (splitTimer > 10)
@@ -66,12 +79,12 @@ public class CarAgent : Agent
             // Either we go up in checkpoint or we are wrapping around back to 0
             if (num == checkpointNum + 1 || (num == 0 && checkpointNum == checkpoints.Length - 1))
             {
-                AddReward(100);
+                AddReward(400);
                 splitTimer = 0f;
             }
             else
             {
-                AddReward(-150);
+                AddReward(-450);
                 splitTimer = 0f;
                 if(num == checkpoints.Length-1) EndEpisode();
             }
@@ -82,7 +95,17 @@ public class CarAgent : Agent
     public void OnCollisionStay(Collision collision) {
         if(collision.collider.CompareTag("Wall")) {
             // Don't crash
-            AddReward(-0.08f);
+            AddReward(-0.04f);
+            crashingTimer += 0.02f;
+        }
+        if(crashingTimer > 8) EndEpisode();
+    }
+
+    public void OollisionExit(Collision collision)
+    {
+        if(collision.collider.CompareTag("Wall")) {
+            AddReward(0.04f);
+            crashingTimer = 0f;
         }
     }
 }
