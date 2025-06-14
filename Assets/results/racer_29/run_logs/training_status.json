@@ -1,0 +1,56 @@
+{
+    "Car": {
+        "checkpoints": [
+            {
+                "steps": 499977,
+                "file_path": "results/racer_29/Car/Car-499977.onnx",
+                "reward": null,
+                "creation_time": 1749821504.261939,
+                "auxillary_file_paths": [
+                    "results/racer_29/Car/Car-499977.pt"
+                ]
+            },
+            {
+                "steps": 999907,
+                "file_path": "results/racer_29/Car/Car-999907.onnx",
+                "reward": null,
+                "creation_time": 1749833436.72299,
+                "auxillary_file_paths": [
+                    "results/racer_29/Car/Car-999907.pt"
+                ]
+            },
+            {
+                "steps": 1499999,
+                "file_path": "results/racer_29/Car/Car-1499999.onnx",
+                "reward": 14353.424434661865,
+                "creation_time": 1749848592.8777766,
+                "auxillary_file_paths": [
+                    "results/racer_29/Car/Car-1499999.pt"
+                ]
+            },
+            {
+                "steps": 1996139,
+                "file_path": "results/racer_29/Car/Car-1996139.onnx",
+                "reward": null,
+                "creation_time": 1749860347.6712563,
+                "auxillary_file_paths": [
+                    "results/racer_29/Car/Car-1996139.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1996139,
+            "file_path": "results/racer_29/Car.onnx",
+            "reward": null,
+            "creation_time": 1749860347.6712563,
+            "auxillary_file_paths": [
+                "results/racer_29/Car/Car-1996139.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cu124"
+    }
+}
